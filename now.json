@@ -2,6 +2,13 @@
   "name": "StaticAureliaDemo-Zeit",
   "version": 2,
   "alias": ["staticaureliademo-zeit.miinosekai.net"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
