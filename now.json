@@ -1,0 +1,9 @@
+{
+  "name": "StaticAureliaDemo-Zeit",
+  "version": 2,
+  "alias": ["staticaureliademo-zeit.miinosekai.net"],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ]
+}
